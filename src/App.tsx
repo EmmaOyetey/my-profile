@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import './App.css'
+import React from 'react';
+import './App.scss';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import TestComponent from './components/testComponent' // Import the TestComponent
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-        <h1>Emma Oyetey</h1>
-      </div>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<TestComponent />} /> {/* Route to the TestComponent */}
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
