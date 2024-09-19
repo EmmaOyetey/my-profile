@@ -5,7 +5,7 @@
     --header-font: #{$font-primary}; // Font for headers
     --body-font: #{$font-secondary}; // Font for paragraphs
 
-    font-family: var(--body-font); // Default font for body
+    font-family: var(--header-font); // Default font for body
     line-height: 1.5;
     font-weight: 400;
 
