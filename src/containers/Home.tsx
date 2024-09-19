@@ -1,6 +1,6 @@
 import "./Home.scss";
 
-const LandingContent: React.FC = () => {
+const Home: React.FC = () => {
     return (
       <div className = "home">
         <h1 className = "name">Emma Oyetey</h1>
@@ -8,7 +8,7 @@ const LandingContent: React.FC = () => {
     );
   };
   
-  export default LandingContent;
+  export default Home;
 
 // import React, { useEffect, useState } from "react";
 // import LandingPage from '../components/LandingContent/LandingContent'; // Adjust the path as needed
