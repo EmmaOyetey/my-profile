@@ -5,6 +5,11 @@
 // }
 
 .landing-content {
+    display: flex; // Use Flexbox for centering
+    justify-content: center; // Center horizontally
+    align-items: center; // Center vertically
+    height: 100vh; // Full height of the viewport
+
     &__name {
         font-size: 10rem;
         animation: flicker-variations 3s linear 3s 1; /* Only flicker, no fade out here */

@@ -1,3 +1,79 @@
+.home {
+    display: flex; 
+    height: 100vh; // Full viewport height
+    overflow:hidden;
+}
+
+.profile {
+    display: flex; 
+    height: 100%; // Full height for scrolling
+
+    &__nav {
+        position: fixed; // Fix the nav to the left side
+        top: 0;
+        left: 0;
+        width: 15rem; // Set the width for the nav
+        height: 100%; // Full height
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); // Optional shadow for depth
+        z-index: 1000; // Ensure nav is above other content
+        overflow-y: auto; 
+    }
+
+    &__content {
+        flex-grow: 1;
+        margin-left: 15rem; // Offset content to the right of the nav
+        overflow-y: auto; // Allow vertical scrolling
+        height: 100vh; // Full height for scrolling
+    }
+}
+
+// Media query for responsiveness
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column; // Stack nav on top
+        height: auto; // Adjust height for mobile
+
+        &__nav {
+            position: relative; // Change to relative for stacking
+            width: 100%; // Full width on mobile
+            height: auto; // Auto height for stacking
+        }
+
+        &__content {
+            margin-left: 0; // Reset margin for full width on mobile
+            height: auto; 
+        }
+    }
+}
+
+.landing-container.fade-out {
+    animation: fadeOut 3s forwards; /* Fade out duration of 3 seconds */
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }  /* Start fully visible */
+    100% { opacity: 0; } /* End fully transparent */
+}
+
+
+
+// .profile__nav {
+//     position: fixed; // Fix the nav to the left side
+//     top: 0;
+//     left: 0;
+//     width: 15rem; // Set the width for the nav
+//     height: 100%; // Full height
+//     background-color: #fff; // Background color for visibility
+//     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); // Optional shadow for depth
+//     z-index: 1000; // Ensure nav is above other content
+// }
+
+// .profile__content {
+//     margin-left: 15rem; // Offset content to the right of the nav
+//     overflow-y: auto; // Allow vertical scrolling
+//     height: 100vh; // Full height for scrolling
+// }
+
 // .name{
 //     font-size: 10rem
 // }
@@ -9,11 +85,3 @@
 // .landing-container {
 //     /* You can add styles for the landing container here if necessary */
 // }
-.landing-container.fade-out {
-    animation: fadeOut 3s forwards; /* Fade out duration of 3 seconds */
-}
-
-@keyframes fadeOut {
-    0% { opacity: 1; }  /* Start fully visible */
-    100% { opacity: 0; } /* End fully transparent */
-}

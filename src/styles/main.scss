@@ -9,7 +9,7 @@
     line-height: 1.5;
     font-weight: 400;
 
-    color-scheme: light dark;
+    //color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-color: $color-black; // Fallback color
     background-image: url('../assets/images/background.jpg'); // Ensure this path is correct
@@ -23,17 +23,27 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
     margin: 0;
+    padding: 0;
+    height: 100%; // Ensure body takes full viewport height
+    overflow-x: hidden; // Prevent horizontal scrolling
+}
+
+body {
     font-family:var(--header-font) ;
     display: flex;
     flex-direction: column; // Ensure content stacks vertically
-    justify-content: center; // Center content vertically
-    align-items: center; // Center content horizontally
+    //justify-content: center; // Center content vertically
+    //align-items: center; // Center content horizontally
     min-width: 320px;
-    min-height: 100vh;
     position: relative; // Position relative for child elements
     z-index: 1; // Ensures content is on top
+    overflow: hiddden;
 }
 
 h1, h2, p {

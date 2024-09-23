@@ -1,0 +1,9 @@
+@use "../../styles/variables" as *;
+ 
+ .content {
+    display: flex;
+    flex-direction: column;
+    padding:3rem;
+    margin-top: 4rem;
+    background-color: $color-black;
+}

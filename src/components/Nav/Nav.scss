@@ -1,0 +1,59 @@
+@use "../../styles/variables" as *;
+
+.nav {
+    padding: 2rem;
+    //padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    //background-color: $color-black;
+
+    &__image-container {
+        margin-top: 3rem;
+    }
+        
+    &__image {
+        width: 15rem;
+        height: auto;
+        object-fit: contain;
+        filter: blur(0.2rem);
+        opacity: 0.9;
+        mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 80%);
+        -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 85%);
+     }
+
+    &__item-container {
+        display: flex;
+        flex-direction: column;    
+        list-style: none;
+        padding: 0;
+        width: 100%; 
+    }
+
+    &__item {
+    font-size: 1.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    
+        a {
+        color: $color-white;
+        font-family: $font-primary;
+        text-decoration: none; 
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #00bcd4; 
+        }
+        }
+    }
+}
+
+//   @media (max-width: 768px) {
+//     position: static; // Change to static for mobile
+//     width: 100%; // Full width on mobile
+//     height: auto; // Auto height on mobile
+//     box-shadow: none; // No shadow on mobile
+//   }
+
+

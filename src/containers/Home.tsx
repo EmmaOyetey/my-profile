@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import LandingContent from '../components/LandingContent/LandingContent'; // Adjust the path as needed
-import AboutMe from '../components/AboutMe/AboutMe'; // Import the new AboutMe component 
+//import AboutMe from '../components/AboutMe/AboutMe'; // Import the new AboutMe component 
+import Nav from '../components/Nav/Nav';
+import Content from '../components/Content/Content';
 import "./Home.scss";
 
 const Home: React.FC = () => {
@@ -35,7 +37,12 @@ const Home: React.FC = () => {
                     <LandingContent />
                 </div>
             ) : (
-                <AboutMe />
+                <div className="profile">
+                        <Nav />
+                    <div className="__content">
+                        <Content />
+                    </div>
+                </div>
             )}
         </div>
     );
