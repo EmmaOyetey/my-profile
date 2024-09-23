@@ -1,3 +1,19 @@
-.name{
-    font-size: 10rem
+// .name{
+//     font-size: 10rem
+// }
+
+// .home {
+//     /* Add any global styles for the home component here if needed */
+// }
+
+// .landing-container {
+//     /* You can add styles for the landing container here if necessary */
+// }
+.landing-container.fade-out {
+    animation: fadeOut 3s forwards; /* Fade out duration of 3 seconds */
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }  /* Start fully visible */
+    100% { opacity: 0; } /* End fully transparent */
 }

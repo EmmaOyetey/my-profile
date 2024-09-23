@@ -1,5 +1,26 @@
+// .landing-content {
+//     &__name {
+//         font-size: 10rem
+//     }
+// }
+
 .landing-content {
     &__name {
-        font-size: 10rem
+        font-size: 10rem;
+        animation: flicker-variations 3s linear 3s 1; /* Only flicker, no fade out here */
     }
+}
+
+@keyframes flicker-variations {
+    0%, 5% { opacity: 1; }  /* On at start */
+    6%, 7% { opacity: 0; }  /* Off quickly */
+    8%, 9% { opacity: 1; } /* Back on for a bit */
+    10%, 11% { opacity: 0; }
+    12%, 13% { opacity: 1; }
+    14%, 20% { opacity: 0; }
+    21%, 23% { opacity: 1; } /* Quick on */
+    24%, 25% { opacity: 0; } /* Off */
+    26%, 27% {opacity: 1;}
+    27%, 36% { opacity: 0; }
+    37%, 100% { opacity: 1; } /* Back on */
 }
