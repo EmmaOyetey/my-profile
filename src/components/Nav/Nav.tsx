@@ -13,7 +13,7 @@ const Nav: React.FC = () => {
             <a className="nav__item" href="#what">Experience</a>
             <a className="nav__item" href="#who">People</a>
             <a className="nav__item" href="contact">Digital</a>
-            <a className="nav__item" href="contact">Contact</a>
+            <a className="nav__item" href="contact">Connect</a>
         </div>
       </nav>
     );
