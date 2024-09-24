@@ -9,10 +9,7 @@ const Content: React.FC = () => {
       <div className="content">
         <AboutMe />
         </div>
-      <div className="content">
-        <AboutMe />
-      </div>
-      <div className ="where">
+      <div className ="content">
         <Where />
       </div>
     </>
