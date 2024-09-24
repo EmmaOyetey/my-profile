@@ -12,6 +12,8 @@
     width: 20rem; 
     height: 100vh; 
     z-index: 1000; 
+    opacity: 0; // Start hidden
+  animation: fadeInNav 3s forwards;
     // border: 0.3rem solid $color-black;  // Add a black border here
     // border-radius: 0.5rem;
     // box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); // Optional shadow for depth
@@ -53,4 +55,95 @@
     0% { opacity: 1; }  
     100% { opacity: 0; } 
 }
+
+@keyframes fadeInNav {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in-content {
+    opacity: 0; // Initially hidden
+    transform: translateY(-30px); // Initially shifted upwards
+    animation: fadeInFromTop 3s ease forwards; // Fade and slide down over 2 seconds
+  
+    @keyframes fadeInFromTop {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px); // Start 30px higher than its normal position
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0); // End in its normal position
+      }
+    }
+  }
+//----------------------------------
+// @use "../../styles/variables" as *;
+
+// .home {
+//     display: flex; 
+//     height: 100vh; 
+// }
+
+// .nav {
+//     position: fixed; 
+//     top: 0;
+//     left: 0;
+//     width: 20rem; 
+//     height: 100vh; 
+//     z-index: 1000; 
+//     // border: 0.3rem solid $color-black;  // Add a black border here
+//     // border-radius: 0.5rem;
+//     // box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); // Optional shadow for depth
+// }
+
+// .profile {
+//     flex-grow: 1;
+//     margin-left: 23rem; 
+//     height: 100vh; 
+//     margin-right:3rem;
+//     display: flex;
+//     flex-direction: column;
+//     //overflow-y: auto; // Enable scrolling only for the content area
+// }
+
+
+// @media (max-width: 768px) {
+//     .home {
+//         flex-direction: column;
+//     }
+
+//     .nav {
+//         position: relative;
+//         width: 100%;
+//         height: auto;
+//     }
+
+//     .content {
+//         margin-left: 0;
+//         height: auto;
+//     }
+// }
+
+// .landing-container.fade-out {
+//     animation: fadeOut 3s forwards; 
+// }
+
+// @keyframes fadeOut {
+//     0% { opacity: 1; }  
+//     100% { opacity: 0; } 
+// }
 
