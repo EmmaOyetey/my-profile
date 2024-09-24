@@ -2,7 +2,7 @@
 
 .organisation-card {
   width: 19rem;
-  height: 10rem;
+  height: 8.5rem;
   padding: 1rem;
   box-shadow: 0 0.325rem 0.3rem rgba(0, 0, 0, 0.1);
   border: 0.1rem solid rgba(255, 255, 255, 0.05);
@@ -13,6 +13,10 @@
   text-decoration: none !important;
   position: relative;
 
+  &__name{
+    font-size: 1.5rem;
+  }
+
   &__content {
     overflow: hidden;
     display: flex;
@@ -22,9 +26,10 @@
   }
 
   &__location {
-    margin-bottom: 0.15rem;
+    //margin-bottom: 0.15rem;
     color: $color-secondary;
     text-align: end;
+    font-size: 0.9rem;
   }
 
   &__tagline-container {
@@ -36,6 +41,7 @@
   &__tagline {
     text-align: right; 
     word-wrap: break-word; 
+    font-size: 0.9rem;
   }
 
   &__icon {
