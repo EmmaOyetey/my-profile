@@ -4,7 +4,7 @@ import "./AboutMe.scss";
 const AboutMe: React.FC = () => {
   return (
     <>
-    <h1 className = "about__tile">About Me</h1>
+    <h1 className = "about__title">About Me</h1>
     <div className="about__content">
             <p className ="about__item">
             People-focused and data-driven; prioritising relationships and empathy while making decisions based on evidence and data.

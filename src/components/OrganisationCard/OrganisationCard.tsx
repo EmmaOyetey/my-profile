@@ -22,21 +22,11 @@ type OrganisationCardProps = {
 const OrganisationCard = ({ organisation, roles }: OrganisationCardProps) => {
   const [isFront, setIsFront] = useState(true);
 
-   // const truncateDescription = (description: string) => {
-  //   const words = description.split(' ');
-  //   if (words.length > 28) {
-  //     return words.slice(0, 28).join(' ') + '...';
-  //   }
-  //   return description;
-  // };
 
   const splitTagline = (tagline: string) => {
-    const maxLengthFirstLine = 35; // Define the maximum length for the first line
-
-    // Find the last space within the max length for the first line
+    const maxLengthFirstLine = 35; 
     let splitIndex = tagline.lastIndexOf(' ', maxLengthFirstLine);
 
-    // If there's no space found within the max length, use the full max length
     if (splitIndex === -1) {
       splitIndex = maxLengthFirstLine;
     }
@@ -100,3 +90,12 @@ const OrganisationCard = ({ organisation, roles }: OrganisationCardProps) => {
 };
 
 export default OrganisationCard;
+
+
+   // const truncateDescription = (description: string) => {
+  //   const words = description.split(' ');
+  //   if (words.length > 28) {
+  //     return words.slice(0, 28).join(' ') + '...';
+  //   }
+  //   return description;
+  // };

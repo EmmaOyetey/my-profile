@@ -8,9 +8,11 @@ const Content: React.FC = () => {
     <>
       <div className="content">
         <AboutMe />
-      </div>
-
+        </div>
       <div className="content">
+        <AboutMe />
+      </div>
+      <div className ="where">
         <Where />
       </div>
     </>

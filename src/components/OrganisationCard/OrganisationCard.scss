@@ -1,8 +1,8 @@
 @use "../../styles/variables" as *;
 
 .organisation-card {
-  width: 19rem;
-  height: 10rem;
+  width: 10rem;
+  height: 5rem;
   padding: 1rem;
   box-shadow: 0 0.325rem 0.3rem rgba(0, 0, 0, 0.1);
   border: 0.1rem solid rgba(255, 255, 255, 0.05);
@@ -11,13 +11,12 @@
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   text-decoration: none !important;
-   position: relative;
+  position: relative;
 
   &__content {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    //justify-content: space-between;
     height: 100%;
     width: 100%;
   }
@@ -31,20 +30,13 @@
   &__tagline-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; // Aligns text to the left by default
+    align-items: flex-end; 
   }
   
   &__tagline {
-    text-align: right; // Aligns text to the left within each line
-    word-wrap: break-word; // Ensures words break properly to wrap lines
+    text-align: right; 
+    word-wrap: break-word; 
   }
-
-
-  // &__tagline {
-  //   text-align: end;
-  //   margin-top: auto; 
-    
-  // }
 
   &__icon {
     position: absolute;
@@ -64,7 +56,7 @@
 }
 
 
-
+//.............................................................................................
     // &__skills-tags {
     //   display: flex;
     //   flex-wrap: wrap;
@@ -109,3 +101,23 @@
     //   color: $color-white;
       
     // }
+    //...............................
+ //   @use "../../styles/variables" as *;
+// .organisation-card {
+//     background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
+//     border: 1px solid #ccc; /* Light gray border for the card */
+//     border-radius: 8px; /* Rounded corners */
+//     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+//     width: 3rem; /* Fixed width for cards */
+//     margin: 0.5rem; /* Margin around each card */
+//     padding: 0.5rem; /* Padding inside each card */
+//     transition: transform 0.2s; /* Smooth transition for hover effect */
+  
+//     &:hover {
+//       transform: translateY(-5px); /* Lift effect on hover */
+//     }
+//   }
+  
+//   .organisation-card__icon {
+//     cursor: pointer; /* Pointer cursor for icons */
+//   }

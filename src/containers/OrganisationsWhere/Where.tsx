@@ -5,7 +5,9 @@ import OrganisationCard from '../../components/OrganisationCard/OrganisationCard
 
 const Where: React.FC = () => {
   return (
-    <div className="where-container">
+    <>
+    <h1 className = "where__title">Where I've worked</h1>
+    <div className="where__content">
       {organisations.map((organisation, index) => (
         <OrganisationCard 
         key={index} 
@@ -13,6 +15,7 @@ const Where: React.FC = () => {
         roles={organisation.roles} />
       ))}
     </div>
+    </>
   );
 };
 

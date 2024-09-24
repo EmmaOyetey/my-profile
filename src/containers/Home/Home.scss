@@ -22,7 +22,9 @@
     margin-left: 23rem; 
     height: 100vh; 
     margin-right:3rem;
-    // overflow-y: auto; // Enable scrolling only for the content area
+    display: flex;
+    flex-direction: column;
+    //overflow-y: auto; // Enable scrolling only for the content area
 }
 
 
