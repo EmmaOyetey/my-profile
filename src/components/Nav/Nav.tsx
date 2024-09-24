@@ -6,20 +6,15 @@ const Nav: React.FC = () => {
     return (
       <nav className="nav">
         <h1 className="nav__name">Emma Oyetey</h1>
-         <div className="nav__image-container">
+        <div className="nav__image-container">
           <img className="nav__image" src={myImage} alt="Image of Emma" />
         </div>
-        <ul className="nav__item-container">
-          <li className="nav__item">
-            <a href="#what">Expereince</a>
-          </li>
-          <li className="nav__item">
-            <a href="#who">People</a>
-          </li>
-          <li className="nav__item">
-            <a href="contact">Contact</a>
-          </li>
-        </ul>
+        <div className="nav__item-container">
+            <a className="nav__item" href="#what">Experience</a>
+            <a className="nav__item" href="#who">People</a>
+            <a className="nav__item" href="contact">Digital</a>
+            <a className="nav__item" href="contact">Contact</a>
+        </div>
       </nav>
     );
   };

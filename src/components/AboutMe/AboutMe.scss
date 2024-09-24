@@ -3,25 +3,16 @@
 .about {
     &__content {
         display: flex;
-        //flex-wrap: wrap; // Allow p tags to wrap to the next line if necessary
-        //justify-content: space-between; // Spread the p tags evenly across the row
-        margin-top: 2rem;
-        width: 100%; // Full container width
-        //flex: 1 1 25%; 
-        
-        //text-align: justify; // Justify the text
-        //padding: 1rem; // Add padding around the text
-        //box-sizing: border-box; // Ensure padding is included in the width calculation
-        //margin: 1rem; // Add some margin for spacing between p tags
-        background-color: rgba(255, 255, 255, 0.1); // Optional: Light background for each p tag
-        //background-color: $color-black;
-        border-radius: 8px; // Optional: Rounded corners
-        min-width: 200px; // Ensure p tags don't get too small on small screens
+        margin-top: 5rem;
+        width: 100%; 
+        background-color: rgba(255, 255, 255, 0.1); 
+        border-radius: 10px; 
+        min-width: 200px; 
     }
 
     &__item{
-        font-size: 1.4rem;
-        flex: 1 1 25%; // Each p tag takes up 25% of the width (adjust as needed)
+        font-size: 1.3rem;
+        flex: 1 1 25%; 
         padding: 1rem;
     }
 }
@@ -29,31 +20,12 @@
 // Optional media queries for adjustments on smaller screens
 @media (max-width: 768px) {
     .about__content p {
-        flex: 1 1 45%; // On smaller screens, p tags take up more width
+        flex: 1 1 45%; 
     }
 }
 
 @media (max-width: 480px) {
     .about__content p {
-        flex: 1 1 100%; // On very small screens, p tags take up the full width
+        flex: 1 1 100%; 
     }
 }
-
-// @use "../../styles/variables" as *;
-
-// .about {
-
-//     &__content{
-//         display: flex;
-//         justify-content: space-between;  
-//         margin-top: 2rem;                                                                                 
-
-
-//   p {
-//     font-size: 1.3rem;
-//     //padding:1rem;
-//   }
-
-// }
-
-// }

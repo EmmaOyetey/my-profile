@@ -8,9 +8,10 @@ const Content: React.FC = () => {
         <div className="content">
             <AboutMe />
         </div>
-        <h1>More stuuf</h1>
-        <p>ksjfh asrtha rt awlt wit witu  OIQTU OQITU OQIUT OQIUT OQIUT OQITU OQIUT OQITU OQITU OQITU OQITU OIT UOI</p>
         
+        <div className="content">
+            <AboutMe />
+        </div>
     </>
   );
 };
