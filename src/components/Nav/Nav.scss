@@ -4,33 +4,38 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.3); 
-    backdrop-filter: blur(2px); 
-    -webkit-backdrop-filter: blur(10px); 
+    //justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border: 1px solid rgba(255, 255, 255, 0.2); // Subtle border to define edges
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+    
 
     &__name {
-        padding: 0rem;        
+        padding: 0rem;
+        margin-top: 3rem;        
         }
 
     &__image-container {
-        padding: 2rem;
+        padding: 1rem;
+        //margin-top:1rem;
     }
         
     &__image {
-        width: 13rem;
-        height: auto;
-        object-fit: contain;
-        filter: blur(0.2rem);
-        opacity: 0.9;
+        width: 10rem;
+        height: 10rem; // Ensure it's a square
+        object-fit: cover; // Cover ensures the image fills the container without distortion
+        filter: blur(0.1rem);
+        opacity: 0.8;
+        border-radius: 50%; // Makes the image circular
+        border: 0.1rem solid white; // Optional border to frame the circle
         mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 80%);
-        -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 85%);
-        // border: 0.6rem solid black;  // Add a black border here
-        // border-radius: 0.5rem;
+         -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 85%);
+
     }
 
     &__item-container {
-        //padding: 0 2rem 2rem 2rem;
+        padding: 0 2rem 2rem 2rem;
         display: flex;
         flex-direction: column;   
         justify-content: center;
@@ -51,7 +56,7 @@
         }
     }
 }
-
+//------------------------------------------------------------
 //   @media (max-width: 768px) {
 //     position: static; // Change to static for mobile
 //     width: 100%; // Full width on mobile

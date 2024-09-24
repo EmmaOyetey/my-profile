@@ -5,7 +5,7 @@ import myImage from "../../assets/images/me-cut-up4.png";
 const Nav: React.FC = () => {
     return (
       <nav className="nav">
-        <h1 className="nav__name">Emma Oyetey</h1>
+        <h2 className="nav__name">Emma Oyetey</h2>
         <div className="nav__image-container">
           <img className="nav__image" src={myImage} alt="Image of Emma" />
         </div>
