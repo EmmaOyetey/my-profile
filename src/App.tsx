@@ -1,6 +1,6 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
-import Home from './containers/Home';
+import Home from "./containers/Home/Home";
 
 const App: React.FC = () => {
   return (
@@ -14,7 +14,6 @@ const App: React.FC = () => {
 
 export default App;
 
-
 // import React from 'react';
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // import Home from './containers/Home';
@@ -23,7 +22,7 @@ export default App;
 //   return (
 //     <Router>
 //       <Routes>
-//         <Route path="/" element={<Home />} /> 
+//         <Route path="/" element={<Home />} />
 //       </Routes>
 //     </Router>
 //   );

@@ -1,0 +1,44 @@
+.carousel {
+  position: relative;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-left: 8rem;
+
+  &__content {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 0.5rem;
+  }
+
+  &__arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    transform: translateY(-50%);
+
+    &--left {
+      left: -1.5rem;
+    }
+
+    &--right {
+      right: -1.5rem;
+    }
+  }
+}
+// @media (max-width: 768px) {
+//   .carousel__content {
+//     flex-direction: column;
+//   }
+// }
+
+// @media (min-width: 769px) {
+//     .carousel__item {
+//       width: calc(100% / 2); /* Adjust width based on itemsToShow prop */
+//     }
+//   }
