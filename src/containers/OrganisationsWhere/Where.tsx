@@ -6,7 +6,7 @@ import OrganisationCard from '../../components/OrganisationCard/OrganisationCard
 const Where: React.FC = () => {
   return (
     <>
-    <h1 className = "where__title">Where I've worked</h1>
+    <h2 className = "where__title">Where I've worked</h2>
     <div className="where__content">
       {organisations.map((organisation, index) => (
         <OrganisationCard 
