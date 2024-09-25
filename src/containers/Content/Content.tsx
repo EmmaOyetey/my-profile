@@ -11,15 +11,16 @@ const Content: React.FC = () => {
       <div className="content">
         <AboutMe />
         </div>
+      <div className = "content">
+        <OrganisationsCarousel />
+      </div>
       <div className ="content">
         <Where />
       </div>
       <div className = "content">
         <ExperienceCarousel />
       </div>
-      <div className = "content">
-        <OrganisationsCarousel />
-      </div>
+      
     </>
   );
 };

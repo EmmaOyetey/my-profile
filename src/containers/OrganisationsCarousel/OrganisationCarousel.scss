@@ -1,16 +1,27 @@
 .carousel__organisation {
   position: relative;
   margin: 0 auto;
-  display:flex;
+  display: flex; 
+  flex-wrap: nowrap; // Ensure items are not wrapping to a new line
+  flex-direction: row;
+  justify-content: space-between; // Spread items evenly
   
-  //margin-left: 8rem;
-  //display: flex;
-  //justify-content: flex-end;
+  // Optional for centering if needed
+  // align-items: center;
+  // max-width: 100%; // Ensure carousel doesn't extend too far
 
- 
+  &__content {
+    display: flex; 
+    flex-direction: row; 
+    overflow: hidden;  // Hide overflowing items to keep only visible ones
+    width: 100%;       // Ensure the content takes full width
+  }
 
   &__item {
+    flex: 1 1 auto; // Allow items to grow and shrink
     padding: 0.5rem;
+    width: 30%; // You can control width to ensure 3 items fit within the container
+    box-sizing: border-box; // Ensure padding doesn't affect width calculation
   }
 
   &__arrow {
@@ -18,7 +29,7 @@
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 3.75rem;
+    top: 50%; // Vertically center the arrows
     transform: translateY(-50%);
 
     &--left {
@@ -26,85 +37,55 @@
     }
 
     &--right {
-      right: -1.6rem;
+      right: -1.5rem;
     }
   }
 }
-// carousel {
 
-//   &__content {
-//   display: flex;
-//   overflow: hidden;
-//   justify-content: center ;
+
+// .carousel__organisation {
+//   position: relative;
+//   margin: 0 auto;
+//   display:flex;
+//   flex-direction: row;
+  
+//   //margin-left: 8rem;
+//   //display: flex;
+//   //justify-content: flex-end;
+
+ 
+
+//   &__item {
+//     padding: 0.5rem;
+//   }
+
 //   &__arrow {
-//       background:none;
-//       border:none;
-//       cursor:pointer;
-//       position:absolute;
+//     background: none;
+//     border: none;
+//     cursor: pointer;
+//     position: absolute;
+//     top: 3.75rem;
+//     transform: translateY(-50%);
 
-//       &--left {
-//           left: 0;
-//       }
+//     &--left {
+//       left: -1.5rem;
+//     }
 
-//       &--right {
-//           right:0;
-//       }
+//     &--right {
+//       right: -1.5rem;
+//     }
 //   }
 // }
-//}
 
-@media (max-width: 768px) {
-  .carousel__content {
-    flex-direction: column; /* Change to vertical scroll on smaller screens */
-    overflow-y: auto; /* Enable vertical scrolling */
-    height: 100vh; /* Adjust as needed for your design */
-  }
-
-  .carousel__item {
-    width: 100%; /* Full width for each item on small screens */
-    height: auto; /* Adjust as needed for your design */
-  }
-}
-
-// .carousel {
-//     display: flex;
-//     //align-items: center;
-//     //justify-content: space-between;
-//     //position: relative;
-//     //padding: 0 2rem; 
-//     overflow: hidden;
-
-//     &__arrow {
-//         backgruond:none;
-//         border:none;
-//         cursor:pointer;
-//         position:absolute;
-
-//         &--left {
-//             left: 0;
-//         }
-
-//         &--right {
-//             right:0;
-//         }
-
-//         // &__content {
-//         //     flex: 1;
-//         //     display: flex;
-//         //     justify-content: center;
-//         //   }
-//     }
+// @media (max-width: 768px) {
+//   .carousel__content {
+//     flex-direction: column; /* Change to vertical scroll on smaller screens */
+//     overflow-y: auto; /* Enable vertical scrolling */
+//     height: 100vh; /* Adjust as needed for your design */
 //   }
-  
-//   @media (max-width: 768px) {
-//     .carousel__content {
-//       flex-direction: column; /* Change to vertical scroll on smaller screens */
-//       overflow-y: auto; /* Enable vertical scrolling */
-//       height: 100vh; /* Adjust as needed for your design */
-//     }
-  
-//     .carousel__item {
-//       width: 100%; /* Full width for each item on small screens */
-//       height: auto; /* Adjust as needed for your design */
-//     }
+
+//   .carousel__item {
+//     width: 100%; /* Full width for each item on small screens */
+//     height: auto; /* Adjust as needed for your design */
 //   }
+// }
