@@ -3,7 +3,7 @@ import OrganisationCard from "../../components/OrganisationCard/OrganisationCard
 import organisations from "../../Data/Experience";
 import { ExperienceType } from "../../Types/experienceTypes";
 //import "../../components/Carousel/Carousel.scss";
-//import "../OrganisationsCarousel/OrganisationCarousel.scss"
+import "../OrganisationsCarousel/OrganisationCarousel.scss"
 
 const renderOrganisation = (organisation: ExperienceType) => 
     <OrganisationCard
@@ -17,6 +17,7 @@ const OrganisationsCarousel = () => (
     renderItem={renderOrganisation} 
     itemsToShow={3} 
     itemsToChange={3} 
+    className="carousel__organisation"
   />
 );
 

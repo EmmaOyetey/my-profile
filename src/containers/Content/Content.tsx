@@ -3,6 +3,7 @@ import "./Content.scss";
 import AboutMe from "../AboutMe/AboutMe";
 import Where from "../OrganisationsWhere/Where";
 import ExperienceCarousel from "../ExperienceCarousel/ExperienceCarousel";
+import OrganisationsCarousel from "../OrganisationsCarousel/OrganisationsCarousel";
 
 const Content: React.FC = () => {
   return (
@@ -15,6 +16,9 @@ const Content: React.FC = () => {
       </div>
       <div className = "content">
         <ExperienceCarousel />
+      </div>
+      <div className = "content">
+        <OrganisationsCarousel />
       </div>
     </>
   );
