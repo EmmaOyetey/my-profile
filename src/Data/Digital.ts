@@ -14,12 +14,18 @@ import hangmanImage from "../assets/images/hangman.png";
 import hangmanVideo from "../assets/videos/hangmanDemo.mp4";
 import cardTecImage from "../assets/images/cardTec.png";
 import meetUpImage from "../assets/images/calendar.png";
+import ravenProjectImage from "../assets/images/ravenProject.jpg";
+import geolocationProjectImage from "../assets/images/geolocationProject.png";
+import hangmanProjectImage from "../assets/images/hangmanProject.png";
+import calculatorProjectImage from "../assets/images/hangmanProject.png";
+import tuneTeezerProjectImage from "../assets/images/tuneTeezerProject.png"
 
 const Project: DigitalType[] = [
   {
     name: "Raven",
     organisation: [10],
     image: ravenImage,
+    projectImage: ravenProjectImage,
     demoVideo: ravenVideo,
     codeLink: "https://github.com/EmmaOyetey/game",
     githubLink: ravenVideo,
@@ -39,6 +45,7 @@ const Project: DigitalType[] = [
     name: "TuneTeezr",
     organisation: [10],
     image: tuneTeezerImage,
+    projectImage: tuneTeezerProjectImage,
     demoVideo: tuneTeezerVideo,
     codeLink: "https://github.com/EmmaOyetey/game",
     githubLink: "https://emmaoyetey.github.io/game/",
@@ -55,6 +62,7 @@ const Project: DigitalType[] = [
     name: "WOV",
     organisation: [10],
     image: wovImage,
+    projectImage: "",
     demoVideo: comingSoonVideo,
     codeLink:
       "https://github.com/nology-tech/wov-client-project/blob/main/README.md",
@@ -76,6 +84,7 @@ const Project: DigitalType[] = [
     name: "Calculator",
     organisation: [10],
     image: calculatorImage,
+    projectImage: calculatorProjectImage,
     demoVideo: claculatorVideo,
     codeLink: "https://github.com/EmmaOyetey/calculator/tree/main",
     githubLink: "https://emmaoyetey.github.io/calculator/",
@@ -86,6 +95,7 @@ const Project: DigitalType[] = [
     name: "Geolocation",
     organisation: [10],
     image: geolocationImage,
+    projectImage: geolocationProjectImage,
     demoVideo: geolocationVideo,
     codeLink: "https://github.com/EmmaOyetey/geolocation",
     githubLink: geolocationVideo,
@@ -103,6 +113,7 @@ const Project: DigitalType[] = [
     name: "Hangman",
     organisation: [10],
     image: hangmanImage,
+    projectImage: hangmanProjectImage,
     demoVideo: hangmanVideo,
     codeLink: "https://github.com/EmmaOyetey/hangman",
     githubLink: hangmanVideo,
@@ -113,6 +124,7 @@ const Project: DigitalType[] = [
     name: "cardTEC",
     organisation: [10],
     image: cardTecImage,
+    projectImage: "",
     demoVideo: comingSoonVideo,
     codeLink: "https://github.com/EmmaOyetey/cards-tec",
     githubLink: comingSoonVideo,
@@ -123,6 +135,7 @@ const Project: DigitalType[] = [
     name: "MeetUp Calendar",
     organisation: [10],
     image: meetUpImage,
+    projectImage: "",
     demoVideo: comingSoonVideo,
     codeLink: "https://github.com/EmmaOyetey/calendar",
     githubLink: comingSoonVideo,

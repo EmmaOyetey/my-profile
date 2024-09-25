@@ -10,8 +10,15 @@ const Digital: React.FC = () => {
     <>
     <Nav />
     <div className="profile">
+        <h1>just writing test content here</h1>
     <Content />
     </div>
+    <footer className="footer">
+                <div className="footer__content">
+                    {/* Footer content, links, or text */}
+                    © 2024 Emma's Digital Page
+                </div>
+            </footer>
     </>
   );
 };
