@@ -51,7 +51,7 @@ const experience: ExperienceType[] = [
       ],
       link: [
         "https://nology.io/wp-content/uploads/2022/12/nology-UK-Software-Engineering-Brochure-2022.pdf",
-        "/digital",
+        "/my-profile/digital",
       ],
       link_text: ["Course Curriculum", "my projects"],
     },
