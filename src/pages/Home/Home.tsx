@@ -1,35 +1,35 @@
 import React, { useEffect, useState } from "react";
 import LandingContent from "../../components/LandingContent/LandingContent";
 import Nav from "../../components/Nav/Nav";
-import Content from "../Content/Content";
-import "./Home.scss";
+import Content from "../../containers/Content/HomeContent";
+import "../Page.scss";
 
 const Home: React.FC = () => {
   const [showLanding, setShowLanding] = useState(true);
   const [flickerStarted, setFlickerStarted] = useState(false);
   const [flickerDone, setFlickerDone] = useState(false);
-  const [showNav, setShowNav] = useState(false); 
-  const [showContent, setShowContent] = useState(false); 
+  const [showNav, setShowNav] = useState(false);
+  const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
     const flickerStartTimer = setTimeout(() => {
-      setFlickerStarted(true); 
+      setFlickerStarted(true);
     }, 3000);
 
     const flickerTimer = setTimeout(() => {
-      setFlickerDone(true); 
+      setFlickerDone(true);
     }, 6000);
 
     const fadeOutTimer = setTimeout(() => {
-      setShowLanding(false); 
+      setShowLanding(false);
     }, 9000);
 
     const navFadeInTimer = setTimeout(() => {
-      setShowNav(true); 
+      setShowNav(true);
     }, 9500);
 
     const contentFadeInTimer = setTimeout(() => {
-      setShowContent(true); 
+      setShowContent(true);
     }, 10500);
 
     return () => {

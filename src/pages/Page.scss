@@ -1,6 +1,7 @@
-@use "../../styles/variables" as *;
+@use "../styles/variables" as *;
 
-.home {
+.home,
+.digital {
     display: flex; 
     height: 100vh; 
 }
@@ -13,7 +14,7 @@
     height: 100vh; 
     z-index: 1000; 
     opacity: 0; // Start hidden
-  animation: fadeInNav 3s forwards;
+    animation: fadeInNav 3s forwards;
     // border: 0.3rem solid $color-black;  // Add a black border here
     // border-radius: 0.5rem;
     // box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); // Optional shadow for depth
